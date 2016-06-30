@@ -12,11 +12,6 @@ RUN rbenv install $RUBY_VERSION && rbenv local $RUBY_VERSION
 RUN gem install --no-ri --no-rdoc bundler
 RUN rbenv rehash
 
-ENV RUBY_VERSION 2.1.2
-RUN rbenv install $RUBY_VERSION && rbenv local $RUBY_VERSION
-RUN gem install --no-ri --no-rdoc bundler
-RUN rbenv rehash
-
 ENV RUBY_VERSION 2.1.6
 RUN rbenv install $RUBY_VERSION && rbenv local $RUBY_VERSION
 RUN gem install --no-ri --no-rdoc bundler
